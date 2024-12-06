@@ -27,13 +27,6 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <SignedOut>
-          <SignInButton />
-        </SignedOut>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
-
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
       </html>
     </ClerkProvider>
